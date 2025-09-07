@@ -10,34 +10,36 @@ David Dueiri
 #include <vector>
 #include <sstream>
 
-namespace CLI {
-    /*
-    A namespace for managing all of the CLI functionality
-    */
+ 
+class CLI_parser {
 
-    /**
-     * @brief Parses the user's command line input.
-     * 
-     * This function tokenizes the input string to identify the command
-     * and its arguments.
-     * 
-     * @param inputValue The raw string input from the user. It will be modified.
-     * @return a vector of chars which can be accessed by other modules.
-     */
-    std::vector<char> parseInputs(std::string& inputValue)
-    {
-        
-        std::stringstream ss(inputValue);
-        std::string token;
-        std::vector<std::string> tokens;
-        while (ss >> token) {
-            tokens.push_back(token);
+
+    public:
+        /**
+         * @brief Parses the user's command line input.
+         * 
+         * This function tokenizes the input string to identify the command
+         * and its arguments.
+         * 
+         * @param inputValue The raw string input from the user. It will be modified.
+         * @return a vector of chars which can be accessed by other modules.
+         */
+        std::vector<char> parseInputs(std::string& inputValue)
+        {
+            
+            //tokenize string, place into tokens vector
+
+        };
+    
+    private:
+        std::vector<std::string> tokenizeInput(std::string cmdString)
+        {
+            std::stringstream ss(cmdString);
+            std::string token;
+            std::vector<std::string> tokens;
+            while (ss >> token) {
+                tokens.push_back(token);
+            }
+            return tokens;
         }
-        //tokenize string
-
-
-
-
-    };
-
-}
+};
