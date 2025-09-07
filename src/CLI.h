@@ -22,9 +22,11 @@ namespace CLI {
      * and its arguments.
      * 
      * @param inputValue The raw string input from the user. It will be modified.
+     * @param cmd A pointer to a char that will contain the cmd code
+     * @param args A pointer to a std::vector that contains args that may be accessed in the future by other parts of the cli.
      * @return a vector of chars which can be accessed by other modules.
      */
-    std::vector<char> parseInputs(std::string& inputValue)
+    void parseInputs(std::string& inputValue, char* cmd, std::vector<char>* args)
     {
         
         std::stringstream ss(inputValue);
@@ -33,7 +35,11 @@ namespace CLI {
         while (ss >> token) {
             tokens.push_back(token);
         }
+
+        
         //tokenize string
+
+
 
 
 

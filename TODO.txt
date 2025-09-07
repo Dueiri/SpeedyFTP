@@ -1,0 +1,39 @@
+CLI
+
+    Create convertWord()
+    Create parseInput()
+    Create Interfaces for networking modules
+    Create Help
+
+
+
+Structure of this FTP Program
+
+
+
+--help                  
+-h <option>
+
+
+--push <directory> <ip>
+-p <directory>
+Connects a client to a server. The directory that the client uploaded is immediately synced with the server. 
+Deleting data on the clientside will not effect the server, but the server will add new files whenever connected
+
+--disconnect <directory> 
+-d <directory>
+Disconnects a directory from the server, data will remain on the server and can be re-accessed if the directory path is provided
+
+--remove <options> <file>  
+<options> -> 
+-r <options> <file>
+
+--setup  <options> 
+-s
+
+<options> -> -S -C 
+--Server --Client
+
+sets up this module for a device to either be a client or a server.
+Servers can store files and give copies to clients, and can have their contents manipulated by clients
+Clients can request and provide files and give 

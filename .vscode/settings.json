@@ -3,6 +3,7 @@
         "other": "off"
     },
     "files.associations": {
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "vector": "cpp"
     }
 }
