@@ -1,9 +1,0 @@
-{
-    "editor.quickSuggestions": {
-        "other": "off"
-    },
-    "files.associations": {
-        "xstring": "cpp",
-        "vector": "cpp"
-    }
-}
